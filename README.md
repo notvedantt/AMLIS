@@ -13,8 +13,16 @@ router, with deterministic risk and compliance gates that no model can override.
 ## Quickstart
 ```bash
 git clone <repo-url> && cd amlis
+
+# Linux / macOS:
 make setup      # venv, dev dependencies, pre-commit hooks
 make check      # lint + types + service boundaries + tests (same as CI)
+
+# Windows (PowerShell):
+python -m venv .venv
+.\.venv\Scripts\pip install -e ".[dev]"
+.\.venv\Scripts\pre-commit install
+.\check.ps1     # runs ruff, mypy, import-linter, pytest, leakage
 ```
 
 ## Structure
