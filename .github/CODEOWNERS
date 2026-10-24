@@ -3,7 +3,7 @@
 /libs/contracts/       @Aditya0292 @notvedantt
 /tests/leakage/        @Aditya0292 @notvedantt
 /.github/              @Aditya0292 @notvedantt
-/docs/                 @rushikesh-github
+/docs/                 @RD1306
 /services/data_plane/  @Aditya0292 @notvedantt
 /services/feature_plane/@notvedantt @Aditya0292
 /services/evaluation/  @notvedantt @Aditya0292
@@ -15,7 +15,7 @@
 /services/router/      @notvedantt @Aditya0292
 /services/risk_gate/   @Aditya0292 @notvedantt
 /services/compliance_gate/@notvedantt @Aditya0292
-/services/execution/   @rushikesh-github @Aditya0292
+/services/execution/   @RD1306 @Aditya0292
 /services/ledger/      @Aditya0292 @notvedantt
 /services/trust_assurance/@notvedantt @Aditya0292
 /services/calibration/ @Aditya0292 @notvedantt
