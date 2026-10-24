@@ -1,23 +1,23 @@
-# Every path needs its owner's review. Replace the placeholder usernames with real GitHub handles.
-*                      @vedant-github @aditya-github
-/libs/contracts/       @aditya-github @vedant-github
-/tests/leakage/        @aditya-github @vedant-github
-/.github/              @aditya-github @vedant-github
+# Every path needs its owner's review.
+*                      @notvedantt @Aditya0292
+/libs/contracts/       @Aditya0292 @notvedantt
+/tests/leakage/        @Aditya0292 @notvedantt
+/.github/              @Aditya0292 @notvedantt
 /docs/                 @rushikesh-github
-/services/data_plane/  @aditya-github @vedant-github
-/services/feature_plane/@vedant-github @aditya-github
-/services/evaluation/  @vedant-github @aditya-github
-/services/quant_ensemble/@aditya-github @vedant-github
-/services/llm_research/@aditya-github @vedant-github
-/services/knowledge/   @vedant-github @aditya-github
-/services/regime/      @aditya-github @vedant-github
-/services/rl_controller/@vedant-github @aditya-github
-/services/router/      @vedant-github @aditya-github
-/services/risk_gate/   @aditya-github @vedant-github
-/services/compliance_gate/@vedant-github @aditya-github
-/services/execution/   @rushikesh-github @aditya-github
-/services/ledger/      @aditya-github @vedant-github
-/services/trust_assurance/@vedant-github @aditya-github
-/services/calibration/ @aditya-github @vedant-github
-/services/system1/     @vedant-github @aditya-github
-/services/observability/@aditya-github @vedant-github
+/services/data_plane/  @Aditya0292 @notvedantt
+/services/feature_plane/@notvedantt @Aditya0292
+/services/evaluation/  @notvedantt @Aditya0292
+/services/quant_ensemble/@Aditya0292 @notvedantt
+/services/llm_research/@Aditya0292 @notvedantt
+/services/knowledge/   @notvedantt @Aditya0292
+/services/regime/      @Aditya0292 @notvedantt
+/services/rl_controller/@notvedantt @Aditya0292
+/services/router/      @notvedantt @Aditya0292
+/services/risk_gate/   @Aditya0292 @notvedantt
+/services/compliance_gate/@notvedantt @Aditya0292
+/services/execution/   @rushikesh-github @Aditya0292
+/services/ledger/      @Aditya0292 @notvedantt
+/services/trust_assurance/@notvedantt @Aditya0292
+/services/calibration/ @Aditya0292 @notvedantt
+/services/system1/     @notvedantt @Aditya0292
+/services/observability/@Aditya0292 @notvedantt
