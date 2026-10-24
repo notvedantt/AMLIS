@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+*.egg-info/
+data/*
+!data/README.md
+artifacts/
+*.ckpt
+*.pt
+*.safetensors
+.ipynb_checkpoints/
+.import_linter_cache/

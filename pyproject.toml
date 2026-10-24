@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amlis"
+version = "0.1.0"
+description = "Adaptive Multi-LLM Intelligence System (decision support, paper trading only)"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.6", "pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.5", "mypy>=1.10", "import-linter>=2.0", "pre-commit>=3.7", "types-PyYAML"]
+
+[project.scripts]
+amlis = "apps.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["apps*", "services*", "libs*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["apps", "services", "libs"]
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.importlinter]
+root_packages = ["apps", "services", "libs"]
+include_external_packages = false
+
+[[tool.importlinter.contracts]]
+name = "Services are independent (talk through libs.contracts only)"
+type = "independence"
+modules = [
+        "services.data_plane",
+        "services.feature_plane",
+        "services.evaluation",
+        "services.quant_ensemble",
+        "services.llm_research",
+        "services.knowledge",
+        "services.regime",
+        "services.rl_controller",
+        "services.router",
+        "services.risk_gate",
+        "services.compliance_gate",
+        "services.execution",
+        "services.ledger",
+        "services.trust_assurance",
+        "services.calibration",
+        "services.system1",
+        "services.observability",
+]
+
+[[tool.importlinter.contracts]]
+name = "libs never import services or apps"
+type = "forbidden"
+source_modules = ["libs"]
+forbidden_modules = ["services", "apps"]
+
+[[tool.importlinter.contracts]]
+name = "services never import apps"
+type = "forbidden"
+source_modules = ["services"]
+forbidden_modules = ["apps"]
