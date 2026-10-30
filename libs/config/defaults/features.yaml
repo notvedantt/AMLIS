@@ -1,0 +1,70 @@
+version: "0.1.0"
+features:
+  - name: "rsi_14"
+    category: "technical"
+    lookback_periods: 14
+    dtype: "float"
+    description: "14-period Relative Strength Index"
+    required: true
+    min_value: 0.0
+    max_value: 100.0
+  - name: "macd_line"
+    category: "technical"
+    lookback_periods: 26
+    dtype: "float"
+    description: "MACD Line (12-period EMA - 26-period EMA)"
+    required: true
+  - name: "macd_signal"
+    category: "technical"
+    lookback_periods: 9
+    dtype: "float"
+    description: "9-period EMA of MACD Line"
+    required: true
+  - name: "macd_hist"
+    category: "technical"
+    lookback_periods: 26
+    dtype: "float"
+    description: "MACD Histogram (MACD line - Signal line)"
+    required: true
+  - name: "sma_20"
+    category: "technical"
+    lookback_periods: 20
+    dtype: "float"
+    description: "20-period Simple Moving Average of close price"
+    required: true
+  - name: "sma_50"
+    category: "technical"
+    lookback_periods: 50
+    dtype: "float"
+    description: "50-period Simple Moving Average of close price"
+    required: true
+  - name: "volatility_20"
+    category: "technical"
+    lookback_periods: 20
+    dtype: "float"
+    description: "20-period rolling close-to-close annualized volatility"
+    required: true
+    min_value: 0.0
+  - name: "sentiment_score"
+    category: "sentiment"
+    lookback_periods: 1
+    dtype: "float"
+    description: "Aggregated news and social sentiment score"
+    required: false
+    min_value: -1.0
+    max_value: 1.0
+  - name: "macro_surprise_cpi"
+    category: "macro"
+    lookback_periods: 1
+    dtype: "float"
+    description: "CPI actual minus consensus surprise value"
+    required: false
+  - name: "macro_shock_flag"
+    category: "macro"
+    lookback_periods: 1
+    dtype: "bool"
+    description: "Binary flag indicating unscheduled macro shock event"
+    required: false
+
+staleness_max_seconds: 300
+default_fill_method: "forward_fill"
