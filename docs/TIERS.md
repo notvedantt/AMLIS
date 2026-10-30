@@ -41,7 +41,7 @@ Analyst roles, debate, memory/reflection, OKF knowledge, baseline arms.
   - [ ] OKF bundles resolve via KnowledgeRef
   - [ ] Baseline arms (single-LLM, vote, TradingAgents-style) run in the harness
 - **Watch out:** Use post-cutoff evaluation windows for LLM arms. Log every LLM call and its cost.
-- **Tasks:** T2.1, T2.2, T2.3, T2.4, T2.5, T2.6, T2.7, T2.8, T2.9
+- **Tasks:** T2.1, T2.2, T2.3, T2.4, T2.5, T2.6, T2.7, T2.8, T2.9, T2.10, T2.11, T2.12, T2.13
 
 ## Tier 3: Regime detection
 Three-state regime detector and event-shock detector, evaluated independently.
