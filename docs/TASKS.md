@@ -4,9 +4,9 @@ Points: Easy = 1, Medium = 2, Hard = 3. Vedant and Aditya carry the Medium/Hard 
 
 | Member | Tasks | Points |
 |---|---|---|
-| Vedant | 22 | 52 |
-| Aditya | 21 | 51 |
-| Rushikesh | 18 | 18 |
+| Vedant | 23 | 53 |
+| Aditya | 22 | 53 |
+| Rushikesh | 20 | 20 |
 
 Branch for each task: `feat/<ID>-<slug>` (or `docs/` for documents). Reviewer is the service's second reviewer in CODEOWNERS.
 
@@ -72,7 +72,7 @@ Notes: GPU-heavy work (sequence model, RL training, System 1 fine-tuning) sits w
 
 | T2.2 | Analysts: technical and fundamental | Aditya | M | `feat/T2.2-analysts-a` | Structured reports with tool-call traces |
 
-| T2.3 | Analysts: news, economic calendar, event/shock, cross-asset | Vedant | H | `feat/T2.3-analysts-b` | Calendar vs shock paths kept separate |
+| T2.3 | Analysts: economic calendar, event/shock, cross-asset | Vedant | H | `feat/T2.3-analysts-b` | Calendar vs shock paths kept separate |
 
 | T2.4 | Analysts: sentiment and company news (using the prompt template) | Rushikesh | E | `feat/T2.4-analysts-c` | Both agents produce schema-valid reports |
 
@@ -85,6 +85,14 @@ Notes: GPU-heavy work (sequence model, RL training, System 1 fine-tuning) sits w
 | T2.8 | Prompt library and LLM call logging | Rushikesh | E | `feat/T2.8-prompt-lib` | All prompts versioned in files; every call logged |
 
 | T2.9 | Baseline arms: single-LLM, majority-vote, TradingAgents-style | Vedant | M | `feat/T2.9-llm-baselines` | Three arms selectable in the harness |
+
+| T2.10 | Trader agent, advisory only, never sizes or places orders | Aditya | M | `feat/T2.10-trader-agent` | Advisory synthesis report produced; no sizing or execution authority |
+
+| T2.11 | Risk-perspective agents: risky, neutral, safe | Vedant | M | `feat/T2.11-risk-agents` | All three risk perspectives emitted with confidence and reasoning |
+
+| T2.12 | Agent roster doc | Rushikesh | E | `docs/T2.12-agent-roster` | Roster document committed and approved |
+
+| T2.13 | LLM provider budget decision (ADR) | Rushikesh | E | `docs/T2.13-adr-llm-providers` | ADR merged after team review |
 
 
 ## Tier 3: Regime detection
